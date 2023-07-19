@@ -4,7 +4,7 @@ import Close from '/images/icon-close.svg';
 import Hamburger from '/images/icon-hamburger.svg';
 
 export default function Navbar() {
-  const [menu, setMenu] = useState<boolean>(false);
+  const [menu, setMenu] = useState<boolean>(true);
 
   const handleMenuClick = () => {
     setMenu((prevState) => !prevState);
@@ -18,7 +18,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Viewport */}
-        <ul className='hidden sm:flex gap-6'>
+        <ul className='hidden sm:flex gap-6 text-[var(--clr-neutral-blue)]'>
           <li className=''>
             <a href='/'>Home</a>
           </li>
@@ -35,16 +35,18 @@ export default function Navbar() {
             <a href='/'>Careers</a>
           </li>
         </ul>
-        <button className='hidden sm:block'>Request Invite</button>
+        <button className='hidden sm:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold'>
+          Request Invite
+        </button>
 
         {/* Mobile Viewport */}
         <button onClick={handleMenuClick} className='sm:hidden'>
-          {menu ? <img src={Close} ></img> : <img src={Hamburger}></img>}
+          {menu ? <img src={Close}></img> : <img src={Hamburger}></img>}
         </button>
         <ul
           className={`${
             menu ? 'visible' : 'invisible'
-          }  absolute top-20 left-0 right-0 mx-auto bg-slate-500 w-[90%] flex  flex-col items-center gap-4 py-6 sm:hidden rounded-md`}
+          }  absolute top-20 left-0 right-0 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex  flex-col items-center gap-5 py-8 sm:hidden rounded-md drop-shadow-2xl`}
         >
           <li>
             <a href='/'>Home</a>
