@@ -35,7 +35,7 @@ export default function Navbar() {
             <a href='/'>Careers</a>
           </li>
         </ul>
-        <button className='hidden sm:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold'>
+        <button className='hidden sm:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold hover:opacity-70 transition'>
           Request Invite
         </button>
 
