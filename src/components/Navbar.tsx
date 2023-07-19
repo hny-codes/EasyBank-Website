@@ -18,7 +18,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Viewport */}
-        <ul className='hidden sm:flex gap-6 text-[var(--clr-neutral-blue)]'>
+        <ul className='hidden md:flex gap-6 text-[var(--clr-neutral-blue)]'>
           <li className=''>
             <a href='/'>Home</a>
           </li>
@@ -35,18 +35,18 @@ export default function Navbar() {
             <a href='/'>Careers</a>
           </li>
         </ul>
-        <button className='hidden sm:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold hover:opacity-70 transition'>
+        <button className='hidden md:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold hover:opacity-70 transition'>
           Request Invite
         </button>
 
         {/* Mobile Viewport */}
-        <button onClick={handleMenuClick} className='sm:hidden'>
+        <button onClick={handleMenuClick} className='md:hidden'>
           {menu ? <img src={Close}></img> : <img src={Hamburger}></img>}
         </button>
         <ul
           className={`${
             menu ? 'visible' : 'invisible'
-          }  absolute top-20 left-0 right-0 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex  flex-col items-center gap-5 py-8 sm:hidden rounded-md drop-shadow-2xl`}
+          }  absolute top-20 left-0 right-0 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex  flex-col items-center gap-5 py-8 md:hidden rounded-md drop-shadow-2xl`}
         >
           <li>
             <a href='/'>Home</a>
