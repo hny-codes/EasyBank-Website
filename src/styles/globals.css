@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* COLORS */
+  /* PRIMARY */
+  --clr-primary-blue: hsl(233, 26%, 24%);
+  --clr-primary-green: hsl(136, 65%, 51%);
+  --clr-primary-cyan: hsl(192, 70%, 51%);
+
+  /* NEUTRAL */
+  --clr-neutral-blue: hsl(233, 8%, 62%);
+  --clr-neutral-light-blue: hsl(220, 16%, 96%);
+  --clr-neutral-very-light-blue: hsl(0, 0%, 98%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+@layer base {
+  @font-face {
+    font-family: Public Sans;
+    font-weight: 300;
+    src: url(/fonts/PublicSans-Light.ttf/);
+  }
+  @font-face {
+    font-family: Public Sans;
+    font-weight: 400;
+    src: url(/fonts/PublicSans-Regular.ttf/);
+  }
+  @font-face {
+    font-family: Public Sans;
+    font-weight: 700;
+    src: url(/fonts/PublicSans-Bold.ttf/);
+  }
+}
