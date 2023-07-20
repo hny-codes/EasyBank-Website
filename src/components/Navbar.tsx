@@ -4,14 +4,14 @@ import Close from '/images/icon-close.svg';
 import Hamburger from '/images/icon-hamburger.svg';
 
 export default function Navbar() {
-  const [menu, setMenu] = useState<boolean>(true);
+  const [menu, setMenu] = useState<boolean>(false);
 
   const handleMenuClick = () => {
     setMenu((prevState) => !prevState);
   };
 
   return (
-    <nav>
+    <nav className='fixed w-full bg-[var(--clr-neutral-white)] z-50'>
       <div className='flex justify-between px-6 py-6 relative items-center'>
         <a href='/' className='mt-1'>
           <img className='h-full' src={Logo} alt='EasyBank logo' />
