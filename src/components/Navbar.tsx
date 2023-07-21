@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className='fixed w-full bg-[var(--clr-neutral-white)] z-50'>
-      <div className='flex justify-between px-6 py-6 relative items-center'>
+      <div className='flex justify-between px-6 py-6 relative items-center max-w-7xl mx-auto'>
         <a href='/' className='mt-1'>
           <img className='h-full' src={Logo} alt='EasyBank logo' />
         </a>
