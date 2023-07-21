@@ -7,8 +7,8 @@ const articles = await Astro.glob('../articles/*.md');
 
 <section class='my-20'>
   <div class='w-[90%] max-w-7xl mx-auto'>
-    <h1 class='text-4xl mb-10 text-center'>Latest Articles</h1>
-    <ul>
+    <h1 class='text-4xl mb-10 text-center md:text-left'>Latest Articles</h1>
+    <ul class="md:grid md:grid-cols-4 md:gap-8">
       {
         articles.map((article) => (
           <Article
