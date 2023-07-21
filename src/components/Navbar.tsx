@@ -19,20 +19,35 @@ export default function Navbar() {
 
         {/* Desktop Viewport */}
         <ul className='hidden md:flex gap-6 text-[var(--clr-neutral-blue)]'>
-          <li className=''>
-            <a href='/'>Home</a>
+          <li className='relative group hover:text-[var(--clr-primary-blue)] transition'>
+            <a href='/' className='py-8'>
+              Home
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-8 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>About</a>
+          <li className='relative group hover:text-[var(--clr-primary-blue)] transition'>
+            <a href='/' className='py-8'>
+              About
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-8 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Contact</a>
+          <li className='relative group hover:text-[var(--clr-primary-blue)] transition'>
+            <a href='/' className='py-8'>
+              Contact
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-8 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Blog</a>
+          <li className='relative group hover:text-[var(--clr-primary-blue)] transition'>
+            <a href='/' className='py-8'>
+              Blog
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-8 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Careers</a>
+          <li className='relative group hover:text-[var(--clr-primary-blue)] transition'>
+            <a href='/' className='py-8'>
+              Careers
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-8 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
         </ul>
         <button className='hidden md:block gradient rounded-full px-8 py-3 text-[var(--clr-neutral-white)] font-bold hover:opacity-70 transition'>
@@ -48,20 +63,35 @@ export default function Navbar() {
             menu ? 'visible' : 'invisible'
           }  absolute top-20 left-0 right-0 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex  flex-col items-center gap-5 py-8 md:hidden rounded-md drop-shadow-2xl`}
         >
-          <li>
-            <a href='/'>Home</a>
+          <li className='relative group'>
+            <a href='/' className='py-1'>
+              Home
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>About</a>
+          <li className='relative group'>
+            <a href='/' className='py-1'>
+              About
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Contact</a>
+          <li className='relative group'>
+            <a href='/' className='py-1'>
+              Contact
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Blog</a>
+          <li className='relative group'>
+            <a href='/' className='py-1'>
+              Blog
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
-          <li>
-            <a href='/'>Careers</a>
+          <li className='relative group'>
+            <a href='/' className='py-1'>
+              Careers
+            </a>
+            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
           </li>
         </ul>
       </div>
