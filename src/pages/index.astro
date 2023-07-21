@@ -1,8 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero.astro';
+import InfoSection from '../components/InfoSection.astro';
+import ArticleSection from '../components/ArticleSection.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = 'Easy Bank';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>Astro</h1>
+  <Navbar client:load/>
+	<Hero />
+  <InfoSection />
+  <ArticleSection />
+  <Footer />
 </BaseLayout>
