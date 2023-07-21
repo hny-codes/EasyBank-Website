@@ -4,11 +4,11 @@ const { author, title, image } = Astro.props;
 
 <li class='my-16 md:my-8'>
   <img
-    class='rounded-t-lg mb-10 md:object-cover h-[200px] w-full'
+    class='rounded-t-lg mb-10 md:object-cover h-[250px] md:h-[200px] w-full'
     src={image}
     alt='article image'
   />
-  <div class='w-5/6  mx-auto'>
+  <div class='w-5/6 mx-auto'>
     <small class='text-[var(--clr-neutral-blue)]'>By {author}</small>
     <h1 class='text-xl my-2'>{title}</h1>
     <div class='text-[var(--clr-neutral-blue)]'>
