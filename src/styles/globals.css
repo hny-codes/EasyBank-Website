@@ -32,4 +32,14 @@
     font-weight: 700;
     src: url(/fonts/PublicSans-Bold.ttf/);
   }
+
+  body {
+    @apply font-publicSans;
+  }
+}
+
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-r from-[var(--clr-primary-green)] to-[var(--clr-primary-cyan)];
+  }
 }
