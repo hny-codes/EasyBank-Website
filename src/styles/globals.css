@@ -42,4 +42,18 @@
   .gradient {
     @apply bg-gradient-to-r from-[var(--clr-primary-green)] to-[var(--clr-primary-cyan)];
   }
+
+  .bg-scale {
+    @apply scale-[2] translate-x-52 -translate-y-20;
+  }
+
+  .phone-scale {
+    @apply scale-125 translate-x-36 translate-y-5;
+  }
+
+  @media screen and (min-width: 768px) {
+    .bg-change {
+      content: url(/images/bg-intro-desktop.svg);
+    }
+  }
 }
