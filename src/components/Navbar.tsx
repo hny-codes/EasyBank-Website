@@ -58,42 +58,46 @@ export default function Navbar() {
         <button onClick={handleMenuClick} className='md:hidden'>
           {menu ? <img src={Close}></img> : <img src={Hamburger}></img>}
         </button>
-        <ul
+        <div
           className={`${
             menu ? 'visible' : 'invisible'
-          }  absolute top-20 left-0 right-0 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex  flex-col items-center gap-5 py-8 md:hidden rounded-md drop-shadow-2xl`}
+          } absolute top-[4.5rem] left-0 right-0 bg-gradient-to-b from-gray-900 to-white/20  h-[90vh]`}
         >
-          <li className='relative group'>
-            <a href='/' className='py-1'>
-              Home
-            </a>
-            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
-          </li>
-          <li className='relative group'>
-            <a href='/' className='py-1'>
-              About
-            </a>
-            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
-          </li>
-          <li className='relative group'>
-            <a href='/' className='py-1'>
-              Contact
-            </a>
-            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
-          </li>
-          <li className='relative group'>
-            <a href='/' className='py-1'>
-              Blog
-            </a>
-            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
-          </li>
-          <li className='relative group'>
-            <a href='/' className='py-1'>
-              Careers
-            </a>
-            <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
-          </li>
-        </ul>
+          <ul
+            className={`relative top-5 mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex flex-col items-center gap-5 py-8 md:hidden rounded-md`}
+          >
+            <li className='relative group'>
+              <a href='/' className='py-1'>
+                Home
+              </a>
+              <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
+            </li>
+            <li className='relative group'>
+              <a href='/' className='py-1'>
+                About
+              </a>
+              <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
+            </li>
+            <li className='relative group'>
+              <a href='/' className='py-1'>
+                Contact
+              </a>
+              <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
+            </li>
+            <li className='relative group'>
+              <a href='/' className='py-1'>
+                Blog
+              </a>
+              <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
+            </li>
+            <li className='relative group'>
+              <a href='/' className='py-1'>
+                Careers
+              </a>
+              <div className='w-full h-1 absolute gradient -bottom-2 opacity-0 group-hover:opacity-100 transition'></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
