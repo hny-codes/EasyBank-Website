@@ -4,7 +4,7 @@ import Close from '/images/icon-close.svg';
 import Hamburger from '/images/icon-hamburger.svg';
 
 export default function Navbar() {
-  const [menu, setMenu] = useState<boolean>(true);
+  const [menu, setMenu] = useState<boolean>(false);
 
   const handleMenuClick = () => {
     setMenu((prevState) => !prevState);
@@ -61,10 +61,12 @@ export default function Navbar() {
         <div
           className={`${
             menu ? 'visible' : 'invisible'
-          } absolute top-[4.5rem] left-0 right-0 bg-gradient-to-b from-gray-900 to-white/20  h-[90vh]`}
+          } absolute top-[4.5rem] left-0 right-0 bg-gradient-to-b from-gray-900 to-white/20 md:hidden h-[90vh]`}
         >
           <ul
-            className={`${menu ? 'opacity-100' : 'opacity-0 translate-y-10'} transition top-5   relative  mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex flex-col items-center gap-5 py-8 md:hidden rounded-md`}
+            className={`${
+              menu ? 'opacity-100' : 'opacity-0 translate-y-10'
+            } transition top-5   relative  mx-auto bg-[var(--clr-neutral-white)] w-[90%] flex flex-col items-center gap-5 py-8 md:hidden rounded-md`}
           >
             <li className='relative group'>
               <a href='/' className='py-1'>
